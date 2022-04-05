@@ -1,0 +1,36 @@
+body{
+    background-image: url(../images/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    color: rgb(160, 77, 77);
+    text-align: center;
+}
+h3{
+    font-size: 20pt;
+    color: rgb(106, 73, 184);
+    text-align: center;
+    transform: translate(0, 10vh);
+}
+button{
+    background-color: blue;
+    width: 15%;
+    height: 8vh;
+    border-radius: 35%;
+    border-color: aqua;
+    transform: translate(85vh, 4.5vh);
+    color: chartreuse;
+}
+#anc{
+    color: white;
+    text-decoration: none;
+}
+#img{
+    width: 20%;
+    transform: translate(-10vh,20vh);
+}
+#img2{
+    width: 20%;
+    transform: translate(72vh,20vh);
+}
