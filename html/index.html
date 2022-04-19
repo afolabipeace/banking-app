@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Page</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="../colorlib-regform-15/css/style.css">
+    <script src="../javascript/signup.js"></script>
+    
+</head>
+<body>
+    <div class="main">
+        <div class="container" >
+            <div class="signup-content">
+                <div class="signup-img" style="background-image: url(../images/images\ \(4\).jpeg); background-repeat: no-repeat; background-size: cover;">
+                   
+                </div>
+                    <div class="signup-form">
+                        <!-- <form method="POST" class="register-form" id="register-form"> -->
+                        <div class="register-form" id="register-form">
+                            <h2>CREATE AN ACCOUNT</h2>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" name="name" id="fn" required placeholder="First Name"/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="father_name" id="sn" required placeholder="Last Name"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="date" name="birth_date" id="dob" placeholder="DOB">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="password" id="pass" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="password" id="cpass" placeholder="Confirm Password">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" placeholder="Email"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="address" id="address" placeholder="Address"/>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <div class="form-select" id="sta">
+                                        <input type="text" name="state" placeholder="State">
+                                        <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-select" id="con"> 
+                                        <input type="text" name="country" placeholder="Country">
+                                        <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-radio">
+                                <label for="gender" class="radio-label" style="color: rgb(128, 49, 49); font-size: 20pt;">Gender </label>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="gender" id="male" checked>
+                                    <label for="male" style="color: rgb(116, 57, 8); font-size: 20pt;">Male</label>
+                                    <span class="check"></span>
+                                </div>
+                                <div class="form-radio-item">
+                                    <input type="radio" name="gender" id="female">
+                                    <label for="female" style="color: rgb(158, 9, 9); font-size: 20pt;">Female</label>
+                                    <span class="check"></span>
+                                </div>
+                            </div>
+                            <div class="form-submit">
+                                <button class="btn btn-success" onclick="creatHere()">CREATE ACCOUNT</button>
+                            </div>
+                                 <br><br>
+                            <div class="form-submit">
+                                <button onclick="creatRere()" ><a href="../html/index02.html" style="color: rgb(116, 9, 9);text-decoration: none;" class="btn btn-danger"> SIGN IN</a></button>
+                            </div>
+                            </div>
+                        <!-- </form> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+   
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

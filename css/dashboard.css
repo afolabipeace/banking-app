@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* border: 1px solid black; */
+}
+section{
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    padding: 1em;
+    padding: auto;
+}
+#port{
+    width: 20%;
+    height: 81vh;
+    background-color: blue;
+    padding: 1em;
+}
+/* #port p{
+    margin-right: 2em;
+    /* height: 5em; */
+    /* padding: auto; */
+    /* box-sizing: content-box; */
+    /* color: black; */ 
+/* } */
+#port p a:hover{
+    color: rgb(255, 254, 254);
+    border-bottom: 3px solid black;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+#div{
+    /* background-color: white;
+    width: 70%;
+    height: 10vh;
+    /* transform: translate(10vh, -10vh); */
+    /* border-bottom-left-radius: 6%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    transform: rotate(-35deg) translate(-1vh, 5vh); */
+    width: 30%;
+    height: 10vh;
+    background-color: white;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border-top-right-radius: 30%;
+    border-top-left-radius: 30%;
+    transform: translate(10vh,5vh );
+
+}
+/* img{
+    width: 60%;
+    height: 30vh;
+    transform: rotate(40deg) translate(5vh,-5vh);
+} */
+#name{
+    color: rgb(39, 8, 8);
+    font-size: 25pt;
+    font-family: sans-serif;
+    transform: translate(5vh, 12vh);
+}
+#anc{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 15pt;
+}
+#name1{
+    color: white;
+    font-size: 10pt;
+    font-family: serif;
+    transform: translate(3vh, 10vh);
+    text-align: start;
+    /* line-height: ; */
+}
+hr{
+    transform: translate(0, 15vh);
+    width: 100%;
+}
+#pp{
+    color: rgb(8, 153, 73);
+    font-size: 20px;
+    font-family: cursive;
+    transform: translate(1vh, 20vh);
+}
+#showHere{
+    width: 90%;
+    height: 81vh;
+    background-color: #f7dfdf;
+}
+#wel{
+    background-color: rgba(214, 93, 214,.5);
+    width: 30%;
+    height: 20vh;
+    transform: translate(5vh, 3vh);
+}
+#acct{
+    background-color: rgba(146, 128, 226, 0.5);
+    width: 30%;
+    height: 20vh;
+    /* margin-left: 20px;
+    margin-top: 70px; */
+    transform: translate(65vh, -17vh);
+}
+
+
+@media (max-width: 500px) {
+    section{
+        flex-direction: column;
+        height: 100vh ;
+    }
+    #port{
+        width: 95%;
+        height: 100vh;
+        background-color: red;
+    }
+    #name{
+        color: white;
+        font-size: 15pt;
+        font-family: sans-serif;
+        transform: translate(17vh, 7vh);
+    }
+    #name1{
+        color: white;
+        font-size: 14pt;
+        font-family: serif;
+        transform: translate(8vh, 4vh);
+        text-align: start;
+        line-height: 2;
+    }
+    hr{
+        transform: translate(-0, 7vh);
+    }
+    #pp{
+        transform: translate(8vh, 8vh);
+        color:black;
+        font-size: 17pt;
+    }
+}
