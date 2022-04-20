@@ -52,11 +52,13 @@
                 <div id="wel"></div>
                 <div id="acct"></div>
             </div>
-            <div id="inp" style="border: 2px solid red;">
-                <input type="number" placeholder="Account Number" id="acc" onkeypress="Name()">
-                <div type="text" placeholder="Full Name" id="look">Full Name</div>
-                <input type="number" id="amt"><br>
-                <button onclick="proceed()">Proceed</button>
+            <div id="inp" style="border: 2px solid red;background-color: rgb(122, 122, 201); width: 80%;height: 50vh; transform: translate(10vh, -10vh);">
+                <center><br>
+                    <input type="number" placeholder="Account Number" id="acc" oninput                          ="Name()"><br><br><br>
+                <div style="background-color: pink; width: 50%; height: 5vh;" id="look">Account Name</div><br><br><br>
+                <input type="number" id="amt" placeholder="input the amount"><br><br><br>
+                <button onclick="proceed()" class="btn btn-danger">Proceed</button>
+                </center>
             </div>
         </div>
     </section>
