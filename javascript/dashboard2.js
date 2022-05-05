@@ -2,10 +2,10 @@ local = JSON.parse(localStorage.getItem('Bankapp'));
 local2 = JSON.parse(localStorage.getItem('signin'))
 function here(){
     wel.innerText =`Welcome, ${local2.firstName}`;
-    // let named = local.find((v) => v.email == local2.email)
-    // var mean = local.indexOf(named);
-    // p = local[mean].balance;
-    // bal.innerText = "Your Balance is" +p
+    let named = local.find((v) => v.email == local2.email)
+    var mean = local.indexOf(named);
+    p = local[mean].balance;
+    bal.innerText = "Your Balance is" +p
     acct.innerText = "Your Account Number is,"+" "+ local2.accountNum
 
 }
@@ -26,6 +26,7 @@ function Name(){
         look.innerHTML=found
     }
 }
+// let histo=[]
 function proceed(){
     let trans = JSON.parse(localStorage.getItem("Bankapp"));
     let local2 = JSON.parse(localStorage.getItem("signin")); 
@@ -42,33 +43,13 @@ function proceed(){
         alert(found)
         let arr = {recipient:found,amountSend:pa,daet:dat,team:tim}
         name.transfer.push(arr);
-        localStorage.setItem('Bankapp', JSON.stringify(trans))
+        localStorage.setItem('Bankapp', JSON.stringify(name))
         console.log(name);
         bal.innerText = "Your balance is" +name
         show.innerText = "Transaction Successful!"
     }
         // location.reload()
 }
-// let histo=[]
-// function proceed(){
-//     let trans = JSON.parse(localStorage.getItem("Bankapp"));
-//     let local2 = JSON.parse(localStorage.getItem("signin")); 
-//     let user = trans.find((val, index) =>(val.accountNum == acc.value))
-//     var found = trans.indexOf(user);
-//     let name = trans.find((v) => v.email == local2.email)
-//     var mean = trans.indexOf(name);
-//         newbal = parseInt(trans[found].balance)+parseInt(amt.value)
-//         newbl = parseInt(trans[mean].balance)- parseInt(amt.value)
-//         trans[found].balance = newbal
-//         trans[mean].balance = newbl
-//         pp = JSON.stringify(trans)
-//         localStorage.setItem("Bankapp",pp)
-//         newed = JSON.parse(localStorage.getItem("Bankapp"));
-//         p = newed[mean].balance;
-//         bal.innerText = "Your balance is" +p
-//         show.innerText = "Transaction Successful!"
-//         // location.reload()
-// }
 function deposit(){
     location.href= "deposit.html"
 }

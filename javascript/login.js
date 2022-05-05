@@ -21,4 +21,11 @@ function signIn()
 			location.href="dashboard.html"
 			// window.open('../dashboard.html')
 		}
+		else if(em.value=="" && pw.value==""){
+			alert('Input your details')
+		}
+		else if(!bank){
+			alert('check your details')
+			// focus.em.value
+		}
     }
