@@ -34,8 +34,7 @@ function creatHere()
     else{ 
         allRegister.push(register);
         localStorage.setItem("Bankapp", JSON.stringify(allRegister));
-        display.innerHTML='Welcome' + " " + register.firstName + " " + register.email; 
-        // alert(acctNo)
+        display.innerHTML='Welcome' + " " + register.firstName + " " + register.email+ " "+register.acctNo; 
         location.href="index02.html"
     }
 
