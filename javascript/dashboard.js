@@ -189,6 +189,8 @@ function withh(){
         }
         document.getElementById('heee').innerHTML = take
     }
-
+    else{
+        heee.innerHTML =('No transaction yet')
+    }
 }
 // {amountwith:parl,dal:dart,teame:tmie}

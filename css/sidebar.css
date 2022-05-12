@@ -1,0 +1,52 @@
+.sidebar {
+    height: 90%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(213, 85, 85);
+    overflow-x: hidden;
+    padding-top: 16px;
+  }
+  #box {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 30px;
+}
+
+#box:hover {
+    color: white;
+    text-decoration: none;
+}
+
+#bD:hover {
+    background-color: rgb(24, 22, 22);
+}
+  
+  .sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  .container :hover{
+      color: rgb(240, 243, 238);
+      background-color: rgb(61, 139, 125);
+  }
+  
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
