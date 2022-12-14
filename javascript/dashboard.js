@@ -3,9 +3,10 @@ function here(){
     local2 = JSON.parse(localStorage.getItem('signIn'))
     findMe = local.find((val)=>val.email == local2.email)
     if (findMe) {
-        wel.innerText =`Welcome, ${findMe.firstName}`;
-        acct.innerText = `Your Account Number is, ${findMe.acctNo}`;
-        bal.innerText = `Your Balance is, ${findMe.balance}`;
+        wel.innerHTML =` ${findMe.firstName}`;
+        well.innerText =`Welcome back ${findMe.firstName}`;
+        acct.innerText = ` ${findMe.acctNo}`;
+        bal.innerText = `${findMe.balance}`;
     }
     else{
         

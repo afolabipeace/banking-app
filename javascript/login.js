@@ -9,7 +9,7 @@ function signIn()
 		let bank = mean.find(vl=>vl.email == em.value && vl.password == pw.value)
 		// console.log(bank)
 		if(bank){
-			alert('i m here')
+			alert('Login Successfully ')
 			location.href="dashboard.html"
 			// window.open('../dashboard.html')
 		}

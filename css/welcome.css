@@ -1,9 +1,7 @@
-/* body{
-    background-image: url(../images/maxresdefault.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.body{
+    background: radial-gradient(white,green)
 }
-h1{
+/* h1{
     color: rgb(160, 77, 77);
     text-align: center;
 }
@@ -33,4 +31,4 @@ button{
 #img2{
     width: 20%;
     transform: translate(72vh,20vh);
-} */
+}  */
